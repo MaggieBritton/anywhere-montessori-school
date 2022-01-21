@@ -1,0 +1,24 @@
+{
+  "name": "anywheremontessorischool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaggieBritton/anywhere-montessori-school.git"
+  },
+  "author": "Margaret Britton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaggieBritton/anywhere-montessori-school/issues"
+  },
+  "homepage": "https://github.com/MaggieBritton/anywhere-montessori-school#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

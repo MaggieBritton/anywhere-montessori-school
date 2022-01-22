@@ -2,7 +2,17 @@
     font-family: "Raleway", sans-serif;
 }
 
-h1 {
+.navbar-brand {
     font-weight: 500;
     font-size: 2rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.navbar-toggler {
+    margin-right: 1rem;
+}
+
+.navbar-nav {
+    margin-right: 1rem;
 }

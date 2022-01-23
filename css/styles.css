@@ -4,9 +4,13 @@
 
 .navbar-brand {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 1rem;
     margin-top: 0.5rem;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .navbar-toggler {
@@ -14,5 +18,16 @@
 }
 
 .navbar-nav {
-    margin-right: 1rem;
+    margin: 1rem;
+}
+
+.nav-item {
+    margin-left: 1rem;
+}
+
+.hero-img {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
 }

@@ -7,7 +7,11 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;600&display=swap" rel="stylesheet">
@@ -18,8 +22,8 @@
     <header class="sticky-top">
         <!-- Navigation -->
             <nav class="navbar navbar-light sticky-top navbar-expand-lg" role="navigation">
-                <a class="navbar-brand" href="#">Anywhere </br>
-                                                Montessori </br>
+                <a class="navbar-brand" href="#">Anywhere <br>
+                                                Montessori <br>
                                                 School
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#amsNavbar">
@@ -49,24 +53,22 @@
     </header>
 
     <div class="hero">
-        <img class="hero-img" src="img/postingWork.jpg" alt="Child doing posting work.">
+        <img class="hero-img" src="img/postingWorkOpt.jpg" alt="Child doing posting work.">
     </div>
          
-
-
     <main>
         <div class="container">
-            <div class="row">
-                <div class="col-12 align-items-center">
+            <div class="row mt-5">
+                <div class="col-12 text-center">
                     <h2>Heading about educational value of Montessori</h2>
                     <p>Brief history and mission of Anywhere Montessori School</p>
                 </div>
             </div>
        
-            <div class="row">
+            <div class="row mt-5">
                 <div class="card-deck">
                     <div class="card">
-                        <img src="img/rainbowWork.jpg" class="card-img-top" alt="Child doing paper tearing and gluing work.">
+                        <img src="img/rainbowWorkOpt.jpg" class="card-img-top" alt="Child doing paper tearing and gluing work.">
                         <div class="card-body">
                             <h3 class="card-title">What is the Montessori Method?</h3>
                             <p class="card-text">Insert paragraph about the Montessori Method Here</p>
@@ -75,7 +77,7 @@
                     </div>
                 
                     <div class="card">
-                        <img src="img/friends.jpg" class="card-img-top" alt="Child doing paper tearing and gluing work.">
+                        <img src="img/friendsOpt.jpg" class="card-img-top" alt="Child doing paper tearing and gluing work.">
                         <div class="card-body">
                             <h3 class="card-title">Apply to Anywhere Montessori</h3>
                             <p class="card-text">Insert paragraph about the application process here</p>
@@ -87,15 +89,45 @@
         </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col">
+    <footer class="mt-5">
+        <div class="container-fluid">
+            <div class="row bg-dark text-light">
+                <div class="col-12 col-md-5">
+                    <address class="pt-4 pl-3">
+                        Anywhere Montessori School <br>
+                        123 Any Rd. <br>
+                        Small Town, USA <br>
+                        <a class="footer-link" href="tel:+15635556789">Phone: (563) 555-6789</a><br>
+                        <a class="footer-link" href="mailto:anywheremontessori@gmail.com">Email: anywheremontessori@gmail.com</a>
+                    </address>
+                </div>
 
+                <div class="col col-md-3 mt-3 mt-md-4">
+                    <ul class="footer-link-list pb-3 pl-3 pb-md-0 pl-md-0">
+                        <li><a class="footer-link" href="#">Home</a></li>
+                        <li><a class="footer-link" href="about/guides.html">Guides</a></li>
+                        <li><a class="footer-link" href="about/day.html">A Typical Day</a></li>
+                        <li><a class="footer-link" href="about/method.html">Montessori Method</a></li>
+                    </ul>
+                </div>
+
+                <div class="col col-md-4 mt-3 mt-md-4">
+                    <ul class="footer-link-list">
+                        <li><a class="footer-link" href="about/classroom.html">The Classroom</a></li>
+                        <li><a class="footer-link" href="admissions/tuition.html">Tuition &amp; Financial Aid</a></li>
+                        <li><a class="footer-link" href="admissions/apply.html">Apply</a></li>
+                        <li><a class="footer-link" href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center my-2">
+                    <small>&copy; 2022 M. Britton Designs </small>
                 </div>
             </div>
         </div>
     </footer>
+
   
     
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->

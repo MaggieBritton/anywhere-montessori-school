@@ -85,7 +85,35 @@
                 <div class="row">
                     <div class="col">
                         <form>
-                            <div class="form-group row"></div>
+                            <!--Student Info-->
+                            <div class="form-group">
+                                <label for="studentsName">Student&apos;s Legal Name <small>(required)</small></label>
+                                <input type="text" class="form-control" id="studentsName" name="studentsName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="studentsBirthday">Student&apos;s Date of Birth <small>(required)</small></label>
+                                <input type="date" class="form-control" id="studentsBirthday" name="studentsBirthday" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="studentsAddress">Student&apos;s Address <small>(required)</small></label>
+                                <textarea class="form-control" id="studentsAddress" name="studentsAddress" rows="2"  required></textarea>
+                            </div>
+                            <!--Parent 1 Info-->
+                            <div class="form-group">
+                                <label for="parent1Name">Parent-1 Name <small>(required)</small></label>
+                                <input type="text" class="form-control" id="parent1Name" name="parent1Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="parent1Email">Parent-1 Primary Email <small>(required)</small></label>
+                                <input type="email" class="form-control" id="parent1Email" name="parent1Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="parent1Address">
+                                    Parent-1 Address <small>(required)</small>
+                                <!--add checkbox here with the text "same as student"-->    
+                                </label>
+                                <textarea class="form-control" id="parent1Address" name="parent1Address" rows="2"  required></textarea>
+                            </div>
                         </form>
                     </div>
                 </div>

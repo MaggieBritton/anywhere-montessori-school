@@ -22,7 +22,7 @@
         <header class="sticky-top">
             <!-- Navigation -->
                 <nav class="navbar navbar-light sticky-top navbar-expand-lg" role="navigation">
-                    <a class="navbar-brand" href="#">Anywhere <br>
+                    <a class="navbar-brand" href="../index.html">Anywhere <br>
                                                     Montessori <br>
                                                     School
                     </a>
@@ -41,9 +41,9 @@
                                     <a class="dropdown-item" href="../about/classroom.html">The Classroom</a>
                                 </div>
                             </li>
-                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="admissions.html" id="admissionsDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admissions</a>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="../admissions.html" id="admissionsDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admissions</a>
                                 <div class="dropdown-menu" aria-labelledby="admissionsDropdownMenuLink">
-                                    <a class="dropdown-item" href="admissions/tuition.html">Tuition &amp; Financial Aid</a>
+                                    <a class="dropdown-item" href="../admissions/tuition.html">Tuition &amp; Financial Aid</a>
                                     <a class="dropdown-item" href="#">Apply</a>
                                 </div>
                             <li class="nav-item"><a class="nav-link" href="../contactus.html">Contact Us</a></li>
@@ -62,7 +62,7 @@
                             <li class="breadcrumb-item active">Apply</li>
                         </ol>
                        <h2>Apply</h2>
-                       <hr />
+                       <hr>
                     </div>
                 </div>
                 <div class="row">
@@ -74,46 +74,106 @@
                     <div class="col">
                         <ol>
                             <li>Please fill out and submit a separate form for each child you with to enroll.</li>
-                            <li>Pay the $100 non-refundable registration fee per family in one of the following ways:</li>
+                            <li>Pay the &dollar;100 non-refundable registration fee per family in one of the following ways:</li>
                                 <ul>
-                                    <li>PayPal (please indicate "Registration Fee" in the Notes section)</li>
+                                    <li>PayPal &#40;please indicate &quot;Registration Fee&quot; in the Notes section&#41;</li>
                                     <li>by mail to: 123 Any. Rd., Small Town, USA</li>
                                 </ul>
                         </ol>
+                        <hr>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col col-lg-8 offset-lg-2">
+                        <h3>Application Form</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-lg-8 offset-lg-2">
                         <form>
                             <!--Student Info-->
                             <div class="form-group">
-                                <label for="studentsName">Student&apos;s Legal Name <small>(required)</small></label>
+                                <label for="studentsName">Student&apos;s Legal Name <small>&#40;required&#41;</small></label>
                                 <input type="text" class="form-control" id="studentsName" name="studentsName" required>
                             </div>
                             <div class="form-group">
-                                <label for="studentsBirthday">Student&apos;s Date of Birth <small>(required)</small></label>
+                                <label for="studentsBirthday">Student&apos;s Date of Birth <small>&#40;required&#41;</small></label>
                                 <input type="date" class="form-control" id="studentsBirthday" name="studentsBirthday" required>
                             </div>
                             <div class="form-group">
-                                <label for="studentsAddress">Student&apos;s Address <small>(required)</small></label>
+                                <label for="studentsAddress">Student&apos;s Address <small>&#40;required&#41;</small></label>
                                 <textarea class="form-control" id="studentsAddress" name="studentsAddress" rows="2"  required></textarea>
                             </div>
                             <!--Parent 1 Info-->
                             <div class="form-group">
-                                <label for="parent1Name">Parent-1 Name <small>(required)</small></label>
+                                <label for="parent1Name">Parent-1 Name <small>&#40;required&#41;</small></label>
                                 <input type="text" class="form-control" id="parent1Name" name="parent1Name" required>
                             </div>
                             <div class="form-group">
-                                <label for="parent1Email">Parent-1 Primary Email <small>(required)</small></label>
+                                <label for="parent1Email">Parent-1 Primary Email <small>&#40;required&#41;</small></label>
                                 <input type="email" class="form-control" id="parent1Email" name="parent1Email" required>
                             </div>
                             <div class="form-group">
                                 <label for="parent1Address">
-                                    Parent-1 Address <small>(required)</small>
-                                <!--add checkbox here with the text "same as student"-->    
+                                    Parent-1 Address <small>&#40;required&#41;</small>
                                 </label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="same as student" id="parent1AddressCheckbox">
+                                    <label class="form-check-label" for="parent1AddressCheckbox">same as student</label>
+                                </div>
                                 <textarea class="form-control" id="parent1Address" name="parent1Address" rows="2"  required></textarea>
                             </div>
+                            <!--Parent 2 Info-->
+                            <div class="form-group">
+                                <label for="parent2Name">Parent-2 Name</label>
+                                <input type="text" class="form-control" id="parent2Name" name="parent2Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="parent2Email">Parent-2 Primary Email</label>
+                                <input type="email" class="form-control" id="parent2Email" name="parent2Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="parent2Address">
+                                    Parent-2 Address
+                                </label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="same as student" id="parent2AddressCheckbox">
+                                    <label class="form-check-label" for="parent2AddressCheckbox">same as student</label>
+                                </div>
+                                <textarea class="form-control" id="parent2Address" name="parent2Address" rows="2"></textarea>
+                            </div>
+                            <!--Program Selection-->
+                            <div class="form-group">
+                                <label for="programSelector">Enroll my child in the following program for the 2022&ndash;2023&colon; <small>&#40;required&#41;</small></label>
+                                <!--age 3 Half Day-->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                    name="programRadios" value="age3HalfDay" id="age3HalfDay">
+                                    <label class="form-check-label" for="age3HalfDay">3 yr old &dash; Half day program &#40;&dollar;3&comma;555&#47;yr or &dollar;395&#47;month&#41;</label>
+                                </div>
+                                <!--age 3 Full Day-->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="programRadios" value="age3FullDay" id="age3FullDay">
+                                    <label class="form-check-label" for="age3FullDay">3 yr old &dash; Full day program &#40;&dollar;5&comma;805&#47;yr or &dollar;645&#47;month&#41;</label>
+                                </div>
+                                <!--age 4 Full Day-->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="programRadios" value="age4FullDay" id="age4FullDay">
+                                    <label class="form-check-label" for="age4FullDay">4 yr old &dash; Full day program &#40;&dollar;4&comma;635&#47;yr or &dollar;515&#47;month&#41;</label>
+                                </div>
+                                <!--age 5 Full Day-->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="programRadios" value="age5FullDay" id="age5FullDay">
+                                    <label class="form-check-label" for="age5FullDay">5 yr old &dash; Full day program &#40;&dollar;4&comma;635&#47;yr or &dollar;515&#47;month&#41;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="regFeeCommit" id="regFeeCommit" required>
+                                    <label class="form-check-label" for="regFeeCommit">I commit to sending the &dollar;100 registration fee per family either using PayPal or by mail. </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-warning">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -144,7 +204,7 @@
                     <div class="col col-md-4 mt-3 mt-md-4">
                         <ul class="footer-link-list">
                             <li><a class="footer-link" href="../about/classroom.html">The Classroom</a></li>
-                            <li><a class="footer-link" href="admissions/tuition.html">Tuition &amp; Financial Aid</a></li>
+                            <li><a class="footer-link" href="../admissions/tuition.html">Tuition &amp; Financial Aid</a></li>
                             <li><a class="footer-link" href="#">Apply</a></li>
                             <li><a class="footer-link" href="../contactus.html">Contact Us</a></li>
                         </ul>

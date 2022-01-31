@@ -55,10 +55,18 @@
     padding: 0;
 }
 
-/* Application Form Styles */
+/* Admissions Styles */
 
 .form-check-inline {
     margin-left: 1em;
+}
+
+.tuition-contact {
+    color:rgb(0, 0, 0);
+}
+
+.tuition-contact:hover {
+    color:rgb(128, 128, 128);
 }
 
 

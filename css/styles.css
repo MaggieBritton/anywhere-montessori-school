@@ -61,11 +61,11 @@
     margin-left: 1em;
 }
 
-.tuition-contact {
+.body-contact {
     color:rgb(0, 0, 0);
 }
 
-.tuition-contact:hover {
+.body-contact:hover {
     color:rgb(128, 128, 128);
 }
 

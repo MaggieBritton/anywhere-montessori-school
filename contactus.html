@@ -16,7 +16,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;600&display=swap" rel="stylesheet">
         
-        <title>Anywhere Montessori School</title>
+        <title>Contact AMS</title>
     </head>
     <body>
         <header class="sticky-top">
@@ -32,59 +32,71 @@
                     </button>
                     <div class="collapse navbar-collapse" id="amsNavbar">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="about/" id="aboutDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
                                 <div class="dropdown-menu" aria-labelledby="aboutDropdownMenuLink">
-                                    <a class="dropdown-item" href="about/guides.html">Guides</a>
-                                    <a class="dropdown-item" href="about/day.html">A Typical Day</a>
-                                    <a class="dropdown-item" href="about/method.html">Montessori Method</a>
-                                    <a class="dropdown-item" href="about/classroom.html">The Classroom</a>
+                                    <a class="dropdown-item" href="guides.html">Guides</a>
+                                    <a class="dropdown-item" href="day.html">A Typical Day</a>
+                                    <a class="dropdown-item" href="method.html">Montessori Method</a>
+                                    <a class="dropdown-item" href="classroom.html">The Classroom</a>
                                 </div>
                             </li>
-                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/admissions/" id="admissionsDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admissions</a>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="admissions/" id="admissionsDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admissions</a>
                                 <div class="dropdown-menu" aria-labelledby="admissionsDropdownMenuLink">
-                                    <a class="dropdown-item" href="admissions/tuition.html">Tuition &amp; Financial Aid</a>
-                                    <a class="dropdown-item" href="admissions/apply.html">Apply</a>
+                                    <a class="dropdown-item" href="tuition.html">Tuition &amp; Financial Aid</a>
+                                    <a class="dropdown-item" href="apply.html">Apply</a>
                                 </div>
-                            <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="#">Contact Us</a></li>
                         </ul>
                     </div>
                 </nav> 
         </header>
 
-        <div class="hero">
-            <img class="hero-img" src="img/postingWorkOpt.jpg" alt="Child doing posting work.">
-        </div>
-            
         <main>
             <div class="container">
-                <div class="row mt-5">
-                    <div class="col-12 text-center">
-                        <h2>Heading about educational value of Montessori</h2>
-                        <p>Brief history and mission of Anywhere Montessori School</p>
+                <div class="row">
+                    <div class="col">
+                        <!-- insert map here -->
+                    </div>
+                    <div class="col">
+                        <h2>Contact Us</h2>
+                        <address>
+                            Anywhere Montessori School <br>
+                            123 Any Rd. <br>
+                            Small Town, USA <br>
+                            <a class="body-contact" href="tel:+15635556789">Phone: (563) 555-6789</a><br>
+                            <a class="body-contact" href="mailto:anywheremontessori@gmail.com">Email: anywheremontessori@gmail.com</a>
+                        </address>
                     </div>
                 </div>
-        
-                <div class="row mt-5">
-                    <div class="card-deck">
-                        <div class="card">
-                            <img src="img/rainbowWorkOpt.jpg" class="card-img-top" alt="Child doing paper tearing and gluing work.">
-                            <div class="card-body">
-                                <h3 class="card-title">What is the Montessori Method?</h3>
-                                <p class="card-text">Learn more about Dr. Maria Montessori's revolutionary educational method and how it might benefit your child.</p>
-                                <a class="btn btn-warning btn-sm" href="about/method.html">Learn More</a>
+                <div class="row">
+                    <div class="col">
+                        <h2>Request a Visit</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="parentName">Parent&apos;s Name <small>&#40;required&#41;</small></label>
+                                <input type="text" class="form-control" id="parentName" name="parentName" required>
                             </div>
-                        </div>
-                    
-                        <div class="card">
-                            <img src="img/friendsOpt.jpg" class="card-img-top" alt="Child doing paper tearing and gluing work.">
-                            <div class="card-body">
-                                <h3 class="card-title">Apply to Anywhere Montessori</h3>
-                                <p class="card-text">We are currently accepting applications for the 2022&ndash;2023 school year. Space fills up quickly, so act now to reserve your child's spot!</p>
-                                <a class="btn btn-warning btn-sm" href="admissions/apply.html">Apply</a>
+                            <div class="form-group">
+                                <label for="studentsName">Prospective Student&apos;s Name </label>
+                                <input type="text" class="form-control" id="studentsName" name="studentsName">
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <label for="email">Email <small>&#40;required&#41;</small></label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone <small>&#40;required&#41;</small></label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warning">Submit</button>
+                            <!-- should I link this form to AMS email? -->
+                        </form>
                     </div>
                 </div>
             </div>
@@ -105,7 +117,7 @@
 
                     <div class="col col-md-3 mt-3 mt-md-4">
                         <ul class="footer-link-list pb-3 pl-3 pb-md-0 pl-md-0">
-                            <li><a class="footer-link" href="#">Home</a></li>
+                            <li><a class="footer-link" href="index.html">Home</a></li>
                             <li><a class="footer-link" href="about/guides.html">Guides</a></li>
                             <li><a class="footer-link" href="about/day.html">A Typical Day</a></li>
                             <li><a class="footer-link" href="about/method.html">Montessori Method</a></li>
@@ -117,7 +129,7 @@
                             <li><a class="footer-link" href="about/classroom.html">The Classroom</a></li>
                             <li><a class="footer-link" href="admissions/tuition.html">Tuition &amp; Financial Aid</a></li>
                             <li><a class="footer-link" href="admissions/apply.html">Apply</a></li>
-                            <li><a class="footer-link" href="contactus.html">Contact Us</a></li>
+                            <li><a class="footer-link" href="#">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -138,3 +150,4 @@
 
     </body>
 </html>
+

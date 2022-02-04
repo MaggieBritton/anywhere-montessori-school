@@ -10,7 +10,7 @@
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(255, 193, 7);
 }
 
 .navbar-toggler {
@@ -26,10 +26,18 @@
 }
 
 .hero-img {
-    /* position: fixed;
-    top: 0; */
     width: 100%;
     height: auto;
+}
+
+.index-quote {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.index-quote-author {
+    font-size: 1.25rem;
+    padding-top: 0.5rem;
 }
 
 .breadcrumb-link, .body-link {
@@ -71,11 +79,19 @@
 
 /* Contace Us Styles */
 
-.map {
-    border: 0;
-    width: 600px;
-    height: auto;
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 55%;
+    position: relative;
+    height: 0;
+}
 
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 

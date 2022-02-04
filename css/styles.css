@@ -94,4 +94,8 @@
     position: absolute;
 }
 
+/* Guides Styles */
 
+.guide-img {
+    width: 100%;
+}

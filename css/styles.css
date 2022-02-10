@@ -25,11 +25,6 @@
     margin-left: 1rem;
 }
 
-.hero-img {
-    width: 100%;
-    height: auto;
-}
-
 .index-quote {
     font-size: 2rem;
     font-weight: 500;
@@ -94,8 +89,18 @@
     position: absolute;
 }
 
-/* Guides Styles */
+/* Image Styles */
 
-.guide-img {
+.img-width {
     width: 100%;
+}
+
+/* Method Links */
+.method-link {
+    color:rgb(0, 0, 0);
+}
+
+.method-link:hover {
+    color:rgb(128, 128, 128);
+    text-decoration: none;
 }

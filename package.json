@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run lite",
     "lite": "lite-server",
-    "build": "npm run build"
+    "clean": "rimraf dist",
+    "imagemin": "imagemin img/* -o build/img",
+    "usemin": "usemin index.html -d build --htmlmin -o build/index.html && usemin contactus.html -d build --htmlmin -o build/contactus.html && usemin about/classroom.html -d build --htmlmin -o build/about/classroom.html && usemin about/day.html -d build --htmlmin -o build/about/day.html && usemin about/guides.html -d build --htmlmin -o build/about/guides.html && usemin about/method.html -d build --htmlmin -o build/about/method.html && usemin admissions/apply.html -d build --htmlmin -o build/admissions/apply.html && usemin admissions/tuition.html -d build --htmlmin -o build/admissions/tuition.html ",
+    "css-minify": "css-minify -d css/ -o build/css/",
+    "build": "npm run clean && npm run imagemin && npm run usemin && npm run css-minify"
   },
   "repository": {
     "type": "git",
@@ -20,11 +24,17 @@
   },
   "homepage": "https://github.com/MaggieBritton/anywhere-montessori-school#readme",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "imagemin-cli": "^7.0.0",
+    "lite-server": "^2.6.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^5.2.0",
+    "css-minify": "^2.0.0",
+    "imagemin": "^8.0.1",
     "jquery": "^3.6.0",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "usemin": "^0.6.0"
   }
 }
